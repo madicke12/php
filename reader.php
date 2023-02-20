@@ -3,7 +3,6 @@ $motif =NULL;
 if(isset($_POST['motif'])):
     $motif= $_POST['motif'];
 endif;
-
 $fileName=null;
 if (isset($_POST['file'])):
     $fileName= $_POST['file'];
