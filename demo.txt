@@ -1,0 +1,13 @@
+
+L’ensemble des classes Java, y compris celles écrites en dehors de l’API, forme une hiérarchie avec une racine unique. Cette racine est la classe Object dont hérite toute autre classe. 
+En effet, si vous ne précisez pas explicitement une relation d’héritage lors de l’écriture d’une classe, celle-ci hérite par défaut de la classe Object. 
+Grâce à cette propriété, des classes génériques 1 de création et de gestion d’un ensemble, 
+plus élaborées que les tableaux, regroupent des objets appartenant à la classe Object (donc de n’importe quelle classe).
+Une des propriétés induites par le polymorphisme est que l’interpréteur 
+Java est capable de trouver le traitement à effectuer lors de l’appel d’une méthode sur un objet. 
+Ainsi, pour plusieurs objets déclarés sous la même classe (mais n’ayant pas la même classe réelle), 
+le traitement associé à une méthode donné peut être différent. 
+Si cette méthode est redéfinie par la classe réelle d’un objet 
+(ou par une classe située entre la classe réelle et la classe de déclaration), 
+le traitement effectué est celui défini dans la classe la plus spécifique de l’objet et qui redéfinie la méthode.
+Dans notre exemple, la méthode affiche() est redéfinie dans toutes les sous-classes de Forme et les traitements effectués sont :
